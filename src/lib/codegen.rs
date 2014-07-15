@@ -1512,7 +1512,7 @@ fn write_enum_impl_enum(w: &mut IndentWriter) {
 
 
 fn write_enum_impl_varint(w: &mut IndentWriter) {
-    w.impl_for_block("::protobuf::ProtobufVarInt", w.en().type_name.as_slice(), |w| {
+    w.impl_for_block("::protobuf::rt::ProtobufVarint", w.en().type_name.as_slice(), |w| {
         w.def_fn("len_varint(&self) -> u32", |w| {
             w.write_line("use protobuf::ProtobufEnum;");
             w.write_line("self.value().len_varint()");
