@@ -2,9 +2,9 @@
 
 name = "protobuf"
 version = "0.1.0"
-readme = "README.md"
 authors = [ "stepan.koltsov@gmail.com" ]
 
 [[lib]]
 
-name = "lib/protobuf"
+name = "protobuf"
+path = "src/lib/protobuf.rs"
